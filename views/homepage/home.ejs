@@ -1,0 +1,14 @@
+<%- include('../partials/header.ejs')%>
+<body>
+    <h1>Homepage!</h1>
+    <form action="/customer/login" method="post">
+            <label>Username</label><br>
+            <input type="text"  name="username"><br>
+            <label>Password</label><br>
+            <input type="password"  name="password"><br>
+        </div>
+        <button type="submit" class="btn btn-warning btn-lg">Login</button>
+    </form>
+    <h3><a href="/customer/register">REGISTER</a></h3>
+</body>
+</html>

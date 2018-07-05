@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs')%>
+<body>
+    <form action="/customer/<%= dataCustomer.id%>/update" method="post">
+        First name:<br>
+        <input type="text" name="firstName" value="<%= dataCustomer.first_name%>">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastName" value="<%= dataCustomer.last_name%>">
+        <br>
+        Email:<br>
+        <input type="text" name="email" value="<%= dataCustomer.email%>">
+        <br>
+        Phone number:<br>
+        <input type="text" name="phoneNumber" value="<%= dataCustomer.phone_number%>">
+        <br>
+        Username:<br>
+        <input type="text" name="username" value="<%= dataCustomer.username%>">
+        <br>
+        Password:<br>
+        <input type="password" name="password">
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+</body>
+</html>

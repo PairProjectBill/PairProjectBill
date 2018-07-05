@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs')%>
+<body>
+    <h1>Hey <%= dataCustomer.first_name %> !!, this is your bills</h1>
+    <p>
+        <!-- <a href="/">Home</a><br> -->
+        <a href="/item/<%= dataCustomer.id%>/add"> Add Item Bill</a>
+        <a href="/customer/<%= dataCustomer.id%>/edit">Edit account</a>
+    </p>
+    <table style="width:100%">
+        <thead>
+            <tr>
+              <th>Id</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th>Tenor</th>
+              <th>Due Date</th>
+              <th>Bill Price</th>
+              <th>Remaining Debt</th>
+              <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>Detail Barang</tr>
+        </tbody>  
+   </table>    
+</body>
+</html>
